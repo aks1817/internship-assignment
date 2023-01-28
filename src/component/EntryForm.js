@@ -54,6 +54,7 @@ const EntryForm = ({ addData, formData }) => {
               onChange={(e) => onChange(e)}
               name="firstName"
               value={firstName}
+              style={{ borderRadius: "7px" }}
               required
             />
           </Form.Group>
@@ -65,6 +66,7 @@ const EntryForm = ({ addData, formData }) => {
               onChange={(e) => onChange(e)}
               name="lastName"
               value={lastName}
+              style={{ borderRadius: "7px" }}
               required
             />
           </Form.Group>
@@ -77,6 +79,7 @@ const EntryForm = ({ addData, formData }) => {
             onChange={(e) => onChange(e)}
             name="contact"
             value={contact}
+            style={{ borderRadius: "7px" }}
             required
           />
         </Form.Group>
