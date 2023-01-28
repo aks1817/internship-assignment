@@ -40,9 +40,13 @@ const ViewTable = ({ formData, removeData, sortData, searchData }) => {
 
   return (
     <div style={{ marginTop: "100px" }}>
-      <Table striped bordered hover size="sm">
+      <Table striped bordered hover size="sm" style={{ textAlign: "center" }}>
         <thead>
-          <tr style={{ borderRadius: "7px", justifyContent: "center" }}>
+          <tr
+            style={{
+              borderRadius: "7px",
+            }}
+          >
             <th>SNo.</th>
             <th>
               <span>
@@ -50,7 +54,7 @@ const ViewTable = ({ formData, removeData, sortData, searchData }) => {
                 <i
                   style={{ float: "right", margin: "3px" }}
                   onClick={onSortChange}
-                  class="fa fa-sort"
+                  className="fa fa-sort"
                   aria-hidden="true"
                 ></i>
               </span>
@@ -67,13 +71,13 @@ const ViewTable = ({ formData, removeData, sortData, searchData }) => {
                 <td>
                   {item.data.firstName} {item.data.lastName}
                 </td>
-                <td>{item.data.contact}</td>
+                <td>+91-{item.data.contact}</td>
                 <td>
                   <Button
                     variant="danger"
                     onClick={() => handleDelete(item.id)}
                   >
-                    Delete
+                    <i className="fa fa-trash" aria-hidden="true"></i>
                   </Button>
                 </td>
               </tr>

@@ -80,13 +80,17 @@ const EntryForm = ({ addData, formData }) => {
             name="contact"
             value={contact}
             style={{ borderRadius: "7px" }}
+            pattern="[0-9]{10}"
             required
           />
         </Form.Group>
         <div style={{ display: "flex", justifyContent: "center" }}>
-          <Button variant="primary" type="submit">
-            Save
-          </Button>
+          <span>
+            <Button variant="primary" type="submit">
+              Save {"  "}
+              <i className="fa fa-save"></i>
+            </Button>
+          </span>
         </div>
       </Form>
     </div>
