@@ -30,7 +30,7 @@ const SearchBar = ({ searchData }) => {
       />
       <div className="input-group-append">
         <button
-          className="btn btn-primary"
+          className="btn btn-info"
           type="button"
           onClick={(e) => onSubmit(e)}
           style={{ marginLeft: "10px" }}
